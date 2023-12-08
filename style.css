@@ -1,0 +1,73 @@
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Satisfy&display=swap');
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+.navbar{
+    height: 80px;
+    margin: 20px;
+    border-radius: 18px;
+    padding: 0.5rem;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.2rem;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.profile{
+    font-size: 15px;
+    padding-top: 20px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.card-img-top{
+    border-radius: 30px;
+    padding: 20px;
+}
+.card{
+    border-radius: 20px;
+}
+.card-text{
+    font-family: 'Satisfy', cursive;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.card:hover{
+    transition:0.3s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+    
+@media(min-width:992px) {
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before,.nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
